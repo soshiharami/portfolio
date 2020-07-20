@@ -87,22 +87,27 @@ const LandingPage = () => (
               textAlign="center"
               style={centerHorizontally}
             >
-              <Text>
-                I'm soshi
-              </Text>
-
+             <TextLoop interval={5000}>
+                {roles
+                  .sort(() => deterministicBehaviour || Math.random() - 0.5)
+                  .map((text) => (
+                    <Text width={[0, 0]} key={text}>
+                      I'm soshi
+                    </Text>
+                  ))}
+              </TextLoop>
             </Heading>
 
-            {/*< <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
-                <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+                <Box mx={5} fontSize={[5, 6, 6]} key={id}>
                   <SocialLink {...rest} />
                 </Box>
               ))}
             </Flex>
-            SectionLink section="about">
+            <SectionLink section="about">
               {({ onClick }) => <MouseIcon onClick={onClick} />}
-            </SectionLink>*/}
+            </SectionLink>
           </Fragment>
         );
       }}
