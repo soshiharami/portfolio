@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Ranchers&display=swap');
+
 p {
     white-space: pre-wrap;
 }
-.box11{
+
+.box{
     padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #5d627b;
-    background: white;
-    border-top: solid 5px #5d627b;
+    margin: 3em 0;
+    color: #000000;
+    background: #f69999;
+    border-top: solid 5px #441616;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-}
-.box11 p {
-    margin: 0;
-    padding: 0;
+    font-family: "kosugi";
 }
