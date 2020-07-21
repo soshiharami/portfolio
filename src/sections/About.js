@@ -12,21 +12,21 @@ const Background = () => (
   <div>
     <Triangle
       color="secondaryLight"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
+      height={['70vh', '90vh']}
+      width={['140vw', '5vw']}
       invertY
     />
 
     <Triangle
       color="primaryDark"
-      height={['20vh', '40vh']}
-      width={['75vw', '70vw']}
+      height={['100vh', '100vh']}
+      width={['50vw', '150vw']}
       invertX
     />
 
     <Triangle
       color="backgroundDark"
-      height={['25vh', '20vh']}
+      height={['10vh', '20vh']}
       width={['100vw', '100vw']}
     />
   </div>
@@ -43,7 +43,7 @@ const ProfilePicture = styled(Image)`
 
 const About = () => (
   <Section.Container id="about" Background={Background}>
-    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+    <Section.Header name="自己紹介"/>
     <StaticQuery
       query={graphql`
         query AboutMeQuery {
@@ -66,7 +66,7 @@ const About = () => (
         const { aboutMe, profile } = data.contentfulAbout;
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-            <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
+            <Box class="box">
               <Fade bottom>
                 <ReactMarkdown
                   source={aboutMe.childMarkdownRemark.rawMarkdownBody}
