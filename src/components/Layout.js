@@ -39,7 +39,7 @@ const theme = {
   ...preset,
   colors,
   fonts: {
-    body: 'Cabin, Open Sans, sans-serif',
+    body: 'Kosugi, Open Sans, sans-serif',
     heading: 'inherit',
     monospace: 'monospace',
   },

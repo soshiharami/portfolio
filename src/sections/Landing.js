@@ -15,17 +15,23 @@ const Background = () => (
       height={['35vh', '80vh']}
       width={['95vw', '60vw']}
     />
+    <Triangle
+      color="primaryDark"
+      height={['15vw', '15vw']}
+      width={['50vh', '50vh']}
+      invertX
+    />
 
     <Triangle
       color="secondary"
-      height={['38vh', '80vh']}
-      width={['50vw', '35vw']}
+      height={['50vh', '50vh']}
+      width={['50vw', '55vw']}
     />
 
     <Triangle
       color="primaryDark"
-      height={['25vh', '35vh']}
-      width={['75vw', '60vw']}
+      height={['2vh', '55vh']}
+      width={['75vw', '10vw']}
       invertX
     />
 
@@ -80,9 +86,19 @@ const LandingPage = () => (
             </Heading>
 
             <Heading
-              as="h2"
+              textAlign="center"
+              as="h1"
               color="primary"
-              fontSize={[5, 6]}
+              fontSize={[6, 7]}
+              mb={[3, 4, 5]}
+            >
+              {`I'm soshi!`}
+            </Heading>
+
+            <Heading
+              as="h4"
+              color= '#f400f0'
+              fontSize={[5, 5]}
               mb={[3, 5]}
               textAlign="center"
               style={centerHorizontally}
@@ -92,7 +108,7 @@ const LandingPage = () => (
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map((text) => (
                     <Text width={[0, 0]} key={text}>
-                      I'm soshi
+                      {text}
                     </Text>
                   ))}
               </TextLoop>
