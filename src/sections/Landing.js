@@ -99,11 +99,11 @@ const LandingPage = () => (
             </Heading>
 
              <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
-              {socialLinks.map(({ id, ...rest }) => (
-                <Box mx={5} fontSize={[5, 6, 6]} key={id}>
-                  <SocialLink {...rest} />
-                </Box>
-              ))}
+               {socialLinks.map(({ id, ...rest }) => (
+                 <Box mx={5} fontSize={[5, 6, 6]} key={id}>
+                   <SocialLink {...rest} />
+                 </Box>
+               ))}
             </Flex>
             <SectionLink section="about">
               {({ onClick }) => <MouseIcon onClick={onClick} />}
