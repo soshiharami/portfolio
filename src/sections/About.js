@@ -65,12 +65,12 @@ const About = () => (
       render={(data) => {
         const { aboutMe, profile } = data.contentfulAbout;
         return (
-          <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-            <Box class="box">
+          <Flex>
+            <Box
+              class="AboutBox">
               <Fade bottom>
                 <ReactMarkdown
                   source={aboutMe.childMarkdownRemark.rawMarkdownBody}
-                  renderers={markdownRenderer}
                 />
               </Fade>
             </Box>
