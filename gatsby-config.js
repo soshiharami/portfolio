@@ -16,7 +16,6 @@ const plugins = [
       background_color: colors.background,
       theme_color: colors.primary,
       display: 'minimal-ui',
-      icon: 'media/icon.png',
     },
   },
   'gatsby-plugin-styled-components',
