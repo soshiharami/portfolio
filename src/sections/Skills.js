@@ -3,6 +3,7 @@ import { Box, Image, Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
+import { graphql, StaticQuery } from 'gatsby';
 
 const Background = () => (
   <div>
@@ -41,6 +42,16 @@ const ProfilePicture = styled(Image)`
 const Skill = () => (
   <Section.Container id="about" Background={Background}>
     <Section.Header name="skills"/>
+    <StaticQuery
+      query={graphql`
+        query skill {
+          skill {
+              childMarkdownRemark {
+                rawMarkdownBody
+           }
+        }
+      `}
+    />
   </Section.Container>
 );
 
