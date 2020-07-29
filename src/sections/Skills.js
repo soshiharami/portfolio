@@ -40,7 +40,7 @@ const ProfilePicture = styled(Image)`
 `;
 
 const Skill = () => (
-  <Section.Container id="about" Background={Background}>
+  <Section.Container id="skills" Background={Background}>
     <Section.Header name="skills"/>
 
   </Section.Container>
